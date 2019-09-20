@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemedDivider should has "border-top-color" equals to "fakeColor"  1`] = `
+.c0.c0.c0:not(.vertical):not(.horizontal) {
+  border-top-color: fakeColor;
+}
+
+<div
+  className="ui divider c0"
+  theme={
+    Object {
+      "second": "fakeColor",
+    }
+  }
+/>
+`;
+
+exports[`ThemedDivider should has "border-top-color" equals to "fakeColor" : border-top-color 1`] = `
+<div
+  className="ui divider sc-bdVaJa jqCiPH"
+  theme={
+    Object {
+      "second": "fakeColor",
+    }
+  }
+/>
+`;

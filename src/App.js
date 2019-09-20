@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
+import React, { useState } from 'react';
+
+import Account from './components/theming/Account/Account';
+import AppWrapper from './components/theming/AppWrapper/AppWrapper'
+import Content from './components/theming/Content/Content'
+import Footer from './components/theming/Footer/Footer'
+import Header from './components/theming/Header/Header'
+import { ThemeProvider } from 'styled-components'
+import Themes  from './themes'
+
+const themes = {...Themes}
+
 function App() {
+  const [theme, setTheme] = useState(themes.palevioletred)
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <AppWrapper>
+        <Header
+          activeTheme={theme.name}
+          themes={Object.keys(themes)}
+          onChangeTheme={theme => setTheme(themes[theme])}
+        />
+        <Content>
+          <Account/>
+        </Content>
+        <Footer />
+      </AppWrapper>
+    </ThemeProvider>
   );
 }
 
