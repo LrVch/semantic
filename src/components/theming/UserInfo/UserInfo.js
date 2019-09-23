@@ -5,16 +5,7 @@ import {
 } from 'semantic-ui-react'
 
 import React from 'react'
-import { device } from '../../../media'
-import styled from 'styled-components'
-
-const StyledUserInfo = styled(Card)`
-  &&& {
-    @media ${device.tabletL} {
-      margin-bottom: 15px;
-    }
-  }
-`
+import StyledUserInfo from './StyledUserInfo'
 
 const UserInfo = () => {
   return (

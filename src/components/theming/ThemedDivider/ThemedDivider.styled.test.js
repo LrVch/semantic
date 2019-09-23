@@ -17,7 +17,7 @@ describe('ThemedDivider', () => {
     const tree = renderer.create(<ThemedDivider theme={{second: 'fakeColor'}} />).toJSON()
 
     expect(tree).toMatchSnapshot()
-    expect(tree).toMatchSnapshot('border-top-color', 'fakeColor', {
+    expect(tree).toHaveStyleRule('border-top-color', 'fakeColor', {
       modifier: '&&&:not(.vertical):not(.horizontal)'
     })
   })

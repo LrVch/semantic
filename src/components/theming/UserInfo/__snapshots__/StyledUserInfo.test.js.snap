@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledUserInfo should has "margin-bottom" equals to "15px"  1`] = `
+@media (max-width:991px) {
+  .c0.c0.c0 {
+    margin-bottom: 15px;
+  }
+}
+
+<div
+  className="ui card c0"
+  onClick={[Function]}
+/>
+`;

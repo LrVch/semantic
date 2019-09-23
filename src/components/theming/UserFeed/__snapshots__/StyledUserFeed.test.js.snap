@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StyledUserFeed applies defaulst and theme's styles  1`] = `ShallowWrapper {}`;

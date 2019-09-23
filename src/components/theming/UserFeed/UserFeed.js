@@ -4,17 +4,7 @@ import {
 } from 'semantic-ui-react'
 
 import React from 'react'
-import styled from 'styled-components'
-
-const StyledUserFeed = styled(Card)`
-  &&& {
-    box-shadow: none;
-
-    .content:last-child {
-      border-top-color: ${({theme}) => theme.second};
-    }
-  }
-`
+import StyledUserFeed from './StyledUserFeed'
 
 const UserFeed = () => {
   return (

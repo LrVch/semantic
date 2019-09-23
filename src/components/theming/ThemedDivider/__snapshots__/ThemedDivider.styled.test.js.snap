@@ -14,14 +14,3 @@ exports[`ThemedDivider should has "border-top-color" equals to "fakeColor"  1`] 
   }
 />
 `;
-
-exports[`ThemedDivider should has "border-top-color" equals to "fakeColor" : border-top-color 1`] = `
-<div
-  className="ui divider sc-bdVaJa jqCiPH"
-  theme={
-    Object {
-      "second": "fakeColor",
-    }
-  }
-/>
-`;
