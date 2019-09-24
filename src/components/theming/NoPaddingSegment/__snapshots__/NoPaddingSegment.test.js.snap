@@ -1,24 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledUserFeed applies default and theme's styles  1`] = `
+exports[`ThemedDivider should has "border-color" equals to "#ff6347ab"  1`] = `
 .c0.c0.c0 {
-  box-shadow: none;
+  border-color: #ff6347ab;
 }
 
-.c0.c0.c0 .user-feed {
-  border-top-color: #ff6347ab;
-}
-
-<Styled(Card)>
+<Styled(Segment)>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "Content": [Function],
-        "Description": [Function],
         "Group": [Function],
-        "Header": [Function],
-        "Meta": [Function],
+        "Inline": [Function],
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bdVaJa",
@@ -27,36 +20,41 @@ exports[`StyledUserFeed applies default and theme's styles  1`] = `
           "rules": Array [
             "
   &&& {
-    box-shadow: none;
-    
-    .user-feed {
-      border-top-color: ",
+    /* padding: 0; */
+    border-color: ",
             [Function],
             ";
-    }
   }
 ",
           ],
         },
-        "displayName": "Styled(Card)",
+        "displayName": "Styled(Segment)",
         "foldedComponentIds": Array [],
         "handledProps": Array [
           "as",
-          "centered",
+          "attached",
+          "basic",
           "children",
+          "circular",
           "className",
+          "clearing",
           "color",
+          "compact",
           "content",
-          "description",
-          "extra",
-          "fluid",
-          "header",
-          "href",
-          "image",
-          "link",
-          "meta",
-          "onClick",
+          "disabled",
+          "floated",
+          "inverted",
+          "loading",
+          "padded",
+          "piled",
+          "placeholder",
           "raised",
+          "secondary",
+          "size",
+          "stacked",
+          "tertiary",
+          "textAlign",
+          "vertical",
         ],
         "render": [Function],
         "styledComponentId": "sc-bdVaJa",
@@ -68,14 +66,13 @@ exports[`StyledUserFeed applies default and theme's styles  1`] = `
     }
     forwardedRef={null}
   >
-    <Card
+    <Segment
       className="c0"
     >
       <div
-        className="ui card c0"
-        onClick={[Function]}
+        className="ui segment c0"
       />
-    </Card>
+    </Segment>
   </StyledComponent>
-</Styled(Card)>
+</Styled(Segment)>
 `;

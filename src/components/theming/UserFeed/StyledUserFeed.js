@@ -6,8 +6,8 @@ import styled from 'styled-components'
 const StyledUserFeed = styled(Card)`
   &&& {
     box-shadow: none;
-
-    .content:last-child {
+    
+    .user-feed {
       border-top-color: ${({ theme }) => theme.second};
     }
   }

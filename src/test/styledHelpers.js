@@ -4,19 +4,27 @@ import React from 'react'
 import { ThemeProvider } from 'styled-components'
 
 export const shallowWithTheme = (tree, theme) => {
-  const context = shallow(<ThemeProvider theme={theme} />)
-    .instance()
-    .getChildContext()
-  return shallow(tree, { context })
-}
+  const WrappingThemeProvider = ({ children }) => (
+    <ThemeProvider theme={theme}>
+      {children}
+    </ThemeProvider>
+  );
+
+  return shallow(
+    tree,
+    { wrappingComponent: WrappingThemeProvider }
+  );
+};
 
 export const mountWithTheme = (tree, theme) => {
-  const context = shallow(<ThemeProvider theme={theme} />)
-    .instance()
-    .getChildContext()
+  const WrappingThemeProvider = ({ children }) => (
+    <ThemeProvider theme={theme}>
+      {children}
+    </ThemeProvider>
+  );
 
-  return mount(tree, {
-    context,
-    childContextTypes: ThemeProvider.childContextTypes,
-  })
-}
+  return mount(
+    tree,
+    { wrappingComponent: WrappingThemeProvider }
+  );
+};

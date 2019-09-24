@@ -12,7 +12,7 @@ const UserFeed = () => {
       <Card.Content>
         <Card.Header>Recent Activity</Card.Header>
       </Card.Content>
-      <Card.Content>
+      <Card.Content className="user-feed">
         <Feed>
           <Feed.Event>
             <Feed.Label image='https://react.semantic-ui.com/images/avatar/small/jenny.jpg' />

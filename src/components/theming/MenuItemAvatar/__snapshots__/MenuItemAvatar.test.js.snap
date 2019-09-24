@@ -1,24 +1,27 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`StyledUserFeed applies default and theme's styles  1`] = `
+exports[`StyledMenuItemAvatar should has default styles 1`] = `
 .c0.c0.c0 {
-  box-shadow: none;
+  padding-left: 1.14285714em;
+  padding-right: 1.14285714em;
 }
 
-.c0.c0.c0 .user-feed {
-  border-top-color: #ff6347ab;
+.c0.c0.c0:before {
+  display: none;
 }
 
-<Styled(Card)>
+@media (max-width:768px) {
+  .c0.c0.c0 {
+    padding-left: 1.14285714em;
+    padding-right: 1.14285714em;
+  }
+}
+
+<Styled(MenuItem)>
   <StyledComponent
     forwardedComponent={
       Object {
         "$$typeof": Symbol(react.forward_ref),
-        "Content": [Function],
-        "Description": [Function],
-        "Group": [Function],
-        "Header": [Function],
-        "Meta": [Function],
         "attrs": Array [],
         "componentStyle": ComponentStyle {
           "componentId": "sc-bdVaJa",
@@ -27,36 +30,50 @@ exports[`StyledUserFeed applies default and theme's styles  1`] = `
           "rules": Array [
             "
   &&& {
-    box-shadow: none;
-    
-    .user-feed {
-      border-top-color: ",
+    padding-left: ",
             [Function],
             ";
+    padding-right: ",
+            [Function],
+            ";
+
+    &:before {
+      display: none;
+    }
+
+    @media ",
+            "(max-width: 768px)",
+            " {
+      padding-left: ",
+            "1.14285714em",
+            ";
+      padding-right: ",
+            "1.14285714em",
+            "
     }
   }
 ",
           ],
         },
-        "displayName": "Styled(Card)",
+        "create": [Function],
+        "displayName": "Styled(MenuItem)",
         "foldedComponentIds": Array [],
         "handledProps": Array [
+          "active",
           "as",
-          "centered",
           "children",
           "className",
           "color",
           "content",
-          "description",
-          "extra",
-          "fluid",
+          "disabled",
+          "fitted",
           "header",
-          "href",
-          "image",
+          "icon",
+          "index",
           "link",
-          "meta",
+          "name",
           "onClick",
-          "raised",
+          "position",
         ],
         "render": [Function],
         "styledComponentId": "sc-bdVaJa",
@@ -68,14 +85,14 @@ exports[`StyledUserFeed applies default and theme's styles  1`] = `
     }
     forwardedRef={null}
   >
-    <Card
+    <MenuItem
       className="c0"
     >
       <div
-        className="ui card c0"
+        className="item c0"
         onClick={[Function]}
       />
-    </Card>
+    </MenuItem>
   </StyledComponent>
-</Styled(Card)>
+</Styled(MenuItem)>
 `;

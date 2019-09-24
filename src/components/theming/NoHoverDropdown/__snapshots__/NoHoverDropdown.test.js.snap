@@ -1,0 +1,286 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ThemedDivider should has "background" equals to "transparent" with hover modifier  1`] = `
+.c0.c0.c0.item:hover {
+  background: transparent;
+}
+
+.c0.c0.c0.item.visible {
+  background: transparent;
+}
+
+<Styled(Dropdown)>
+  <StyledComponent
+    forwardedComponent={
+      Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Divider": [Function],
+        "Header": [Function],
+        "Item": [Function],
+        "Menu": [Function],
+        "SearchInput": [Function],
+        "attrs": Array [],
+        "autoControlledProps": Array [
+          "open",
+          "searchQuery",
+          "selectedLabel",
+          "value",
+          "upward",
+        ],
+        "componentStyle": ComponentStyle {
+          "componentId": "sc-bdVaJa",
+          "isStatic": true,
+          "lastClassName": "c0",
+          "rules": Array [
+            "
+  &&&.item {
+    &:hover {
+      background: transparent;
+    }
+    &.visible {
+      background: transparent;
+    }
+  }
+",
+          ],
+        },
+        "displayName": "Styled(Dropdown)",
+        "foldedComponentIds": Array [],
+        "handledProps": Array [
+          "additionLabel",
+          "additionPosition",
+          "allowAdditions",
+          "as",
+          "basic",
+          "button",
+          "children",
+          "className",
+          "clearable",
+          "closeOnBlur",
+          "closeOnChange",
+          "closeOnEscape",
+          "compact",
+          "deburr",
+          "defaultOpen",
+          "defaultSearchQuery",
+          "defaultSelectedLabel",
+          "defaultUpward",
+          "defaultValue",
+          "direction",
+          "disabled",
+          "error",
+          "floating",
+          "fluid",
+          "header",
+          "icon",
+          "inline",
+          "item",
+          "labeled",
+          "lazyLoad",
+          "loading",
+          "minCharacters",
+          "multiple",
+          "noResultsMessage",
+          "onAddItem",
+          "onBlur",
+          "onChange",
+          "onClick",
+          "onClose",
+          "onFocus",
+          "onLabelClick",
+          "onMouseDown",
+          "onOpen",
+          "onSearchChange",
+          "open",
+          "openOnFocus",
+          "options",
+          "placeholder",
+          "pointing",
+          "renderLabel",
+          "scrolling",
+          "search",
+          "searchInput",
+          "searchQuery",
+          "selectOnBlur",
+          "selectOnNavigation",
+          "selectedLabel",
+          "selection",
+          "simple",
+          "tabIndex",
+          "text",
+          "trigger",
+          "upward",
+          "value",
+          "wrapSelection",
+        ],
+        "render": [Function],
+        "styledComponentId": "sc-bdVaJa",
+        "target": [Function],
+        "toString": [Function],
+        "warnTooManyClasses": [Function],
+        "withComponent": [Function],
+      }
+    }
+    forwardedRef={null}
+  >
+    <Dropdown
+      additionLabel="Add "
+      additionPosition="top"
+      className="c0"
+      closeOnBlur={true}
+      closeOnEscape={true}
+      deburr={false}
+      icon="dropdown"
+      minCharacters={1}
+      noResultsMessage="No results found."
+      openOnFocus={true}
+      renderLabel={[Function]}
+      searchInput="text"
+      selectOnBlur={true}
+      selectOnNavigation={true}
+      wrapSelection={true}
+    >
+      <Ref
+        innerRef={
+          Object {
+            "current": .c0.c0.c0.item:hover {
+  background: transparent;
+}
+
+.c0.c0.c0.item.visible {
+  background: transparent;
+}
+
+<div
+              aria-expanded="false"
+              class="ui dropdown c0"
+              role="listbox"
+              tabindex="0"
+            >
+              <div
+                aria-atomic="true"
+                aria-live="polite"
+                class="text"
+                role="alert"
+              />
+              <i
+                aria-hidden="true"
+                class="dropdown icon"
+              />
+              <div
+                class="menu transition"
+              >
+                <div
+                  class="header"
+                >
+                  Settings
+                </div>
+                <div
+                  class="item"
+                  role="option"
+                >
+                  Account
+                </div>
+              </div>
+            </div>,
+          }
+        }
+      >
+        <RefFindNode
+          innerRef={
+            Object {
+              "current": <div
+                aria-expanded="false"
+                class="ui dropdown c0"
+                role="listbox"
+                tabindex="0"
+              >
+                <div
+                  aria-atomic="true"
+                  aria-live="polite"
+                  class="text"
+                  role="alert"
+                />
+                <i
+                  aria-hidden="true"
+                  class="dropdown icon"
+                />
+                <div
+                  class="menu transition"
+                >
+                  <div
+                    class="header"
+                  >
+                    Settings
+                  </div>
+                  <div
+                    class="item"
+                    role="option"
+                  >
+                    Account
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+        >
+          <div
+            aria-expanded={false}
+            className="ui dropdown c0"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseDown={[Function]}
+            role="listbox"
+            tabIndex={0}
+          >
+            <div
+              aria-atomic={true}
+              aria-live="polite"
+              className="text"
+              role="alert"
+            />
+            <Icon
+              as="i"
+              className=""
+              name="dropdown"
+              onClick={[Function]}
+            >
+              <i
+                aria-hidden="true"
+                className="dropdown icon"
+                onClick={[Function]}
+              />
+            </Icon>
+            <DropdownMenu
+              className=""
+            >
+              <div
+                className="menu transition"
+              >
+                <DropdownHeader>
+                  <div
+                    className="header"
+                  >
+                    Settings
+                  </div>
+                </DropdownHeader>
+                <DropdownItem>
+                  <div
+                    className="item"
+                    onClick={[Function]}
+                    role="option"
+                  >
+                    Account
+                  </div>
+                </DropdownItem>
+              </div>
+            </DropdownMenu>
+          </div>
+        </RefFindNode>
+      </Ref>
+    </Dropdown>
+  </StyledComponent>
+</Styled(Dropdown)>
+`;

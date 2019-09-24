@@ -7,9 +7,9 @@ import React from 'react'
 import { device } from '../../../media'
 import styled from 'styled-components'
 
-const px = '1.14285714em'
+export const px = '1.14285714em'
 
-const StyledMenuItemAvatar = styled(Menu.Item)`
+export const StyledMenuItemAvatar = styled(Menu.Item)`
   &&& {
     padding-left: ${({ position }) => position === 'right' ? 0 : px};
     padding-right: ${({ position }) => position === 'left' ? 0 : px};

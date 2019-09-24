@@ -1,10 +1,12 @@
 import 'jest-styled-components'
 
-import { configure, shallow } from 'enzyme'
+import { configure, mount, shallow } from 'enzyme'
 
 import Adapter from 'enzyme-adapter-react-16'
 import React from 'react'
 import StyledUserFeed from './StyledUserFeed'
+import { ThemeProvider } from 'styled-components'
+import UserFeed from './UserFeed'
 import { mountWithTheme } from '../../../test'
 import styled from 'styled-components'
 import themes from '../../../themes'
@@ -13,34 +15,34 @@ configure({ adapter: new Adapter() })
 
 describe('StyledUserFeed', () => {
 
-  let wrapper
-  let mounted
+  let wrapperStyled
+  let mountedStyled
+  let wrapperUserFeed
+  let mountedUserFeed
 
   beforeEach(() => {
-    wrapper = shallow(<StyledUserFeed />)
-    // mounted = mountWithTheme(<StyledUserFeed />, themes.tomato)
+    wrapperStyled = shallow(<StyledUserFeed />)
+    wrapperUserFeed = shallow(<UserFeed />)
+    mountedStyled = mountWithTheme(<StyledUserFeed />, themes.tomato)
+    mountedUserFeed = mountWithTheme(<UserFeed />, themes.tomato)
   })
 
   test('should create', () => {
-    expect(wrapper).toBeTruthy()
+    expect(wrapperStyled).toBeTruthy()
   })
 
-  test('applies defaulst and theme\'s styles ', () => {
-    wrapper = shallow(<StyledUserFeed theme={{ second: 'fakeColor' }} />)
+  test('applies default and theme\'s styles ', () => {
+    expect(mountedStyled).toMatchSnapshot()
 
-    // expect(wrapper).toMatchSnapshot()
-    // expect(mounted).toHaveStyleRule('box-shadow', 'none', {
-    //   modifier: '&&',
-    // });
-    // expect(mounted.find('.content:last-child')).toHaveStyleRule('background-color', '#fff', {
-    //   modifier: '&&',
-    // });
-    // expect(wrapper).toHaveStyleRule('box-shadow', 'none', {
-    //   modifier: '&&&'
-    // })
-    // expect(tree).toHaveStyleRule('margin-bottom', '15px', {
-    //   modifier: '&&&'
-    // })
+    expect(mountedStyled).toHaveStyleRule('box-shadow', 'none', {
+      modifier: '&&&',
+    });
+
+    expect(mountedUserFeed.find('div.user-feed')).toHaveLength(1);
+
+    expect(mountedUserFeed).toHaveStyleRule('border-top-color', '#ff6347ab', {
+      modifier: '&&& .user-feed',
+    });
   })
 })
 

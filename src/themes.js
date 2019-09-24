@@ -7,7 +7,7 @@ export default {
     dark: 'rgba(0,0,0,.87)'
   },
   palevioletred: {
-    name: 'tomato',
+    name: 'palevioletred',
     main: 'palevioletred',
     second: '#db709394',
     invert: 'white',

@@ -4,10 +4,10 @@ import styled from 'styled-components'
 const NoHoverDropdown = styled(Dropdown)`
   &&&.item {
     &:hover {
-      background: 0 0;
+      background: transparent;
     }
     &.visible {
-      background: 0 0;
+      background: transparent;
     }
   }
 `
